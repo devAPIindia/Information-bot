@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: information-bot
+    runtime: python
+    repo: https://github.com/dehariyadevansh299-star/Information-bot
+    plan: free
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
